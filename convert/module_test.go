@@ -20,6 +20,7 @@ func TestConvert(t *testing.T) {
 	truncateFalseOpts := options.NewOptions().SetTruncateIntegers(false)
 
 	testCases := []struct {
+		gorm.Model
 		name       string
 		inputfile  string
 		outputfile string
